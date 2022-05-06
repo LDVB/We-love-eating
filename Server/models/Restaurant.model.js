@@ -1,20 +1,20 @@
 const { Schema, model } = require("mongoose");
 const restaurantSchema = new Schema(
   {
-    restaurant: {
-        type: String,
-        unique: true,
-        required: true,
-        trim: true,
+    name: {
+      type: String,
+      unique: true,
+      required: [true, 'El nombre es obligatorio.'],
+      trim: true,
 
     },
-    
+
     location: {
-        type: String,
+      type: String,
     },
-  
+
     image: {
-        type: String,
+      type: String,
     },
 
     website: {
@@ -22,18 +22,14 @@ const restaurantSchema = new Schema(
     },
 
     description: {
-        type: String,
-        maxlength: 500,
-        trim: true,
+      type: String,
+      maxlength: 500,
+      trim: true,
     },
-  
-    assistants: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Eater',
-    }],
- },
+
+  },
   {
-    
+
     timestamps: true,
   }
 );
