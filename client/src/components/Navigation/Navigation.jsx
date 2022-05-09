@@ -14,9 +14,16 @@ const Navigation = () => {
     return (
      <nav className="navBar">
          <div className="nav-container">
+
+            <Link to="/">
+                <Nav.Link  className="home" onClick={handleClick}> WE LOVE EATING </Nav.Link>
+            </Link>
+         
              <ul className={click ? 'Nav-menu active' : 'Nav-menu'}>
                
                 <nav className={click ? 'Nav-menu active' : 'Nav-menu'}>
+
+                    
 
                     <Link to="/Danza Okara" className="nav-item">
                         <Nav.Link active className="NavLink" onClick={handleClick}> Restaurantes </Nav.Link>
@@ -31,7 +38,7 @@ const Navigation = () => {
                 </nav>
              </ul>
             <div className="Nav-Icon" onClick={handleClick}>
-                     <FontAwesomeIcon icon={ click? faXmark : faAlignJustify} />
+                <FontAwesomeIcon icon={ click? faXmark : faAlignJustify} />
             </div>
          </div>
      </nav>

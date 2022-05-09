@@ -7,16 +7,21 @@
 
 }
 
+.home{
+    font-family: Maitree;
+    color: #e9c46a;
+    font-size: 25px;
+}
+
 
 .nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 80px;
-    max-width: 1500px;
+    max-width: inherit;
     background-color: #264653;
-  }
+}
 
 
   
