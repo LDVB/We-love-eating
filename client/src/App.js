@@ -1,13 +1,14 @@
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
-import Hero from './components/Hero/Hero';
-
+import Footer from './components/Footer/Footer';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   return (
     <div>
        <Navigation/>
-       <Hero/>
+       <AppRoutes/>
+       <Footer/>
         
     </div>
   );

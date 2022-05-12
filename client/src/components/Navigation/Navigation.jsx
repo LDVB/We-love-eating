@@ -16,7 +16,7 @@ const Navigation = () => {
          <div className="nav-container">
 
             <Link to="/">
-                <Nav.Link  className="home" onClick={handleClick}> WE LOVE EATING </Nav.Link>
+                <Nav.Link  as="span" className="home" onClick={handleClick}> WE LOVE EATING </Nav.Link>
             </Link>
          
              <ul className={click ? 'Nav-menu active' : 'Nav-menu'}>
@@ -25,14 +25,14 @@ const Navigation = () => {
 
                     
 
-                    <Link to="/Danza Okara" className="nav-item">
-                        <Nav.Link active className="NavLink" onClick={handleClick}> Restaurantes </Nav.Link>
+                    <Link to="/Restaurantes" className="nav-item">
+                        <Nav.Link  as="span" active className="NavLink" onClick={handleClick}> Restaurantes </Nav.Link>
                     </Link>
-                    <Link to="/Actividades" className="nav-item">
-                        <Nav.Link active className="NavLink" onClick={handleClick}> Usuarios </Nav.Link>
+                    <Link to="/Usuarios" className="nav-item">
+                        <Nav.Link  as="span" active className="NavLink" onClick={handleClick}> Usuarios </Nav.Link>
                     </Link>
-                    <Link to="/Proyecto" className="nav-item">
-                        <Nav.Link active className="NavLink" onClick={handleClick}> Grupos </Nav.Link>
+                    <Link to="/Grupos" className="nav-item">
+                        <Nav.Link  as="span" active className="NavLink" onClick={handleClick}> Grupos </Nav.Link>
                     </Link>
                     
                 </nav>
